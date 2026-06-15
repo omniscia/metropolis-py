@@ -52,22 +52,22 @@ class Metropolis:
 cities = [[0, 4], [3, 6], [2, 7], [3, 7]]
 
 possibles = []
-for w in xrange(1, len(cities)):
-    for x in xrange(1, len(cities)):
-        for y in xrange(1, len(cities)):
-            for z in xrange(1, len(cities)):
+for w in range(1, len(cities)):
+    for x in range(1, len(cities)):
+        for y in range(1, len(cities)):
+            for z in range(1, len(cities)):
                 possibles = possibles + [[w, x, y, z]]
 
 def objFunc(args):
     dist = 0.0
-    for x in xrange(1, len(args)):
+    for x in range(1, len(args)):
         dist = dist + math.sqrt(math.pow(cities[x-1][0] - cities[x][0], 2) + math.pow(cities[x-1][1] - cities[x][1], 2))
     dist = dist + math.sqrt(math.pow(cities[len(args) - 1][0] - cities[0][0], 2) + math.pow(cities[len(args) - 1][1] - cities[0][1], 2))
 
     return dist
 
 def main():
-    print objFunc([2, 3, 1, 0])
+    print(objFunc([2, 3, 1, 0]))
 
 if __name__ == '__main__':
     main()
