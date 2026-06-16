@@ -18,7 +18,7 @@
 # USA
 #
 # This software is maintained by Vivake (vivakeATomniscia.org) and is available at:
-#     /~vivake/python/Metropolis.py
+#     https://omniscia.org/python/metropolis
 
 
 """ Simplex - Metropolis-Hastings Algorithm for Monte Carlo Simulations
